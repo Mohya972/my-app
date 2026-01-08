@@ -1,30 +1,23 @@
-import React from "react";
-import {
-  Text,
-  View
-} from "react-native";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import Todo from '../components/Todo';
 
-const Index = () => {
+// fonction flèche index
+const index = () => {
   return (
-    <View style ={styles.main}>
-      <Text style={styles.montexte}>Index</Text>
-      <Bonjour />
+    <View style={styles.content}>
+      <Todo />
     </View>
-  )
-}
+  );
+};
 
-export default Index
+export default index;
 
+// ajout du style de index
 const styles = StyleSheet.create({
-  main: {
-    backgroundColor : 'green',
-    flex : 1,
-    justifyContent : 'center',
-    alignItems : 'center'
-  },
-  montexte : {
-    color : 'white',
-    fontSize : 18,
-    fontWeight : 700
+  // style de la vue principale
+  content : {
+    flex : 1, // prend toute la place disponible
+    backgroundColor : 'green', // couleur de fond verte
   }
-})
+});
