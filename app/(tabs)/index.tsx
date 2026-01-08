@@ -1,6 +1,8 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Bonjour from '../components/bonjour'
+import React from "react";
+import {
+  Text,
+  View
+} from "react-native";
 
 const Index = () => {
   return (
