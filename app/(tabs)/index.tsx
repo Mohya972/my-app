@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Todo from '../components/Todo';
+import Compteur from '../components/Compteur';
 
 // fonction flèche index
 const index = () => {
   return (
     <View style={styles.content}>
-      <Todo />
+      <Compteur />
     </View>
   );
 };
