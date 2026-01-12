@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Champs from '../components/Champs';
+import Compteur from '../components/Compteur';
 
 // fonction flèche index
 const index = () => {
   return (
     <View style={styles.content}>
-      <Champs />
+      <Compteur />
     </View>
   );
 };
