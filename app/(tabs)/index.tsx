@@ -1,13 +1,19 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
 import Compteur from '../components/Compteur';
+import CompteurRedux from '../components/CompteurRedux';
+import { store } from '../store/store';
 
 // fonction flèche index
 const index = () => {
   return (
-    <View style={styles.content}>
-      <Compteur />
-    </View>
+    <Provider store={store}>
+      <View style={styles.content}>
+        <Compteur />
+        <CompteurRedux />
+      </View>
+    </Provider>
   );
 };
 
